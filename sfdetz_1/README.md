@@ -1,6 +1,6 @@
-# Excavating-RoI-Attention-for-Underwater-Object-Detection
+# SFDet
 
-This paper was accepted by ICIP2022 ([arXiv:2206.12128](https://arxiv.org/abs/2206.12128)). 
+
 
 ## Dependencies
 
@@ -34,7 +34,7 @@ $ mkdir UTDAC2020
 It is recommended to symlink the dataset root to `$data`.
 
 ```
-Excavating-RoI-Attention-for-Underwater-Object-Detection
+
 ├── data
 │   ├── UTDAC2020
 │   │   ├── train2017
@@ -42,11 +42,7 @@ Excavating-RoI-Attention-for-Underwater-Object-Detection
 │   │   ├── annotations
 ```
 
-This model is also applicable to Pascal VOC and COCO datasets.
 
-COCO: https://cocodataset.org/#download
-
-PASCAL VOC: http://host.robots.ox.ac.uk/pascal/VOC/
 
 Other underwater dataset: https://github.com/mousecpn/Collection-of-Underwater-Object-Detection-Dataset
 
@@ -55,25 +51,16 @@ Other underwater dataset: https://github.com/mousecpn/Collection-of-Underwater-O
 If you want to use Pascal VOC or COCO dataset, lease change the dataset type under the `roitransformer_r50_fpn_1x_coco.py` file.
 
 ```
-$ python tools/train.py configs/faster_rcnn/roitransformer_r50_fpn_1x_coco.py
+$ python tools/train.py 
 ```
 
 ## Test
 
 ```
-$ python tools/test.py configs/faster_rcnn/roitransformer_r50_fpn_1x_coco.py <path/to/checkpoints>
+$ python tools/test.py configs/sfdet/sfdet_1x_utdac.py <path/to/checkpoints>
 ```
 
-## Citation
 
-```
-@inproceedings{liang2022excavating,
-  title={Excavating RoI Attention for Underwater Object Detection},
-  author={Liang, Xvtao and Song, Pinhao},
-  booktitle={2022 IEEE International Conference on Image Processing (ICIP)},
-  year={2022},
-  organization={IEEE}
-}
 ```
 
 ## Acknowledgement
