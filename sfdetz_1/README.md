@@ -48,7 +48,6 @@ Other underwater dataset: https://github.com/mousecpn/Collection-of-Underwater-O
 
 ## Train
 
-If you want to use Pascal VOC or COCO dataset, lease change the dataset type under the `roitransformer_r50_fpn_1x_coco.py` file.
 
 ```
 $ python tools/train.py 
@@ -65,6 +64,6 @@ $ python tools/test.py configs/sfdet/sfdet_1x_utdac.py <path/to/checkpoints>
 
 ## Acknowledgement
 
-This work is suported by Science and Technology Development Fund of Macau (0008/2019/A1, 0010/2019/AFJ, 0025/2019/AKP).
 
-And thanks MMDetection team for the wonderful open source project!
+
+Thanks MMDetection team for the wonderful open source project!
